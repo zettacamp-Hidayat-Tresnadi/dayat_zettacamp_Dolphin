@@ -50,3 +50,4 @@ console.log(isPrime(10.1));
 // console.log(isPrime(241));
 // console.log(isPrime(2));
 // console.log(isPrime('a'))
+// console.log(isPrime(5))
