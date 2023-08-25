@@ -1,0 +1,152 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Navbar section -->
+    <div class="nav-container">
+      <div>
+        <img src="https://upload.wikimedia.org/wikipedia/en/3/32/MiHoYo_Logo.png" alt="MiHoYo_Logo" width="50%" />
+      </div>
+      <nav class="navbar">
+        <a href="./Index.html"><h1>Home</h1></a>
+        <a href="./Aboute-Me.html"><h1>About</h1></a>
+        <a href="./Contact-Me.html"><h1>Contact</h1></a>
+        <a href="./shopping-list.html"><h1>Shopping List</h1></a>
+      </nav>
+    </div>
+    <h1 style="text-align: center; margin-top: 40px; font-size: 40px">Add Item</h1>
+    <form action="./shopping-list.html" method="post" class="addItemForm">
+      <table >
+        <tr>
+          <td><label for="itemName" >Name:</label></td>
+          <td><input type="text" id="itemName" name="itemName" value="iPad mini"  /></td>
+        </tr>
+        <tr>
+          <td><label for="chip">Chip:</label></td>
+          <td><input type="text" id="chip" name="chip" value="Chip A15 Bionic"  /></td>
+        </tr>
+        <tr>
+          <td><label for="imageUrl">Image Url:</label></td>
+          <td><input type="text" id="imageUrl" name="iamgeUrl" value="https://idstore.co.id/wp-content/uploads/2022/01/MLWL3PA_A.png"  /></td>
+        </tr>
+      </table>
+      <input type="submit" value="Submit" style="margin-top: 20px; width: 150px; font-size: 20px;" />
+    </form>
+    <h1 style="text-align: center;">Added Item</h1>
+    <div class="container" style="border: none; background-color: white;">
+        <div class="card" >
+          <img
+            src="https://www.apple.com/v/macbook-air/q/images/overview/compare/compare_mba_m1__dsgh2hoxlkae_large.png"
+            alt=""
+            width="50%"
+            height="100px"
+          />
+          <h2 >MacBook Air 13”</h2>
+          <p >Chip M1</p>
+          <button
+          >
+            Beli
+          </button>
+        </div>
+        <div class="card">
+          <img
+            src="https://www.apple.com/v/macbook-air/q/images/overview/compare/compare_mba_13__fkpooaz0g1ay_large.png"
+            alt=""
+            width="50%"
+            height="100px"
+          />
+          <h2 >MacBook Air 13”</h2>
+          <p >Chip M2</p>
+          <button
+          >
+            Beli
+          </button>
+        </div>
+        <div class="card">
+          <img
+            src="https://www.apple.com/v/macbook-air/q/images/overview/compare/compare_mba_15__fcvfhj9b1uy6_large.png"
+            alt=""
+            width="50%"
+            height="100px"
+          />
+          <h2 >MacBook Air 15”</h2>
+          <p>Chip M2</p>
+          <button
+          >
+            Beli
+          </button>
+        </div>
+      </div>
+    <!-- Footer -->
+    <footer>
+      <div>
+        <table>
+          <tr>
+            <td>
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/5733/5733207.png"
+                alt=""
+                width="100px"
+                height="100px"
+                style="margin-left: 25px"
+              />
+            </td>
+            <td style="font-size: 25px">Garansi Resmi</td>
+          </tr>
+        </table>
+      </div>
+      <div>
+        <table>
+          <tr>
+            <td>
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/27/27130.png"
+                alt=""
+                width="100px"
+                height="100px"
+                style="margin-left: 25px"
+              />
+            </td>
+            <td style="font-size: 25px">Layanan Pelanggan</td>
+          </tr>
+        </table>
+      </div>
+      <div>
+        <table>
+          <tr>
+            <td>
+              <img
+                src="https://img.freepik.com/free-icon/box-closed_318-48060.jpg"
+                alt=""
+                width="100px"
+                height="100px"
+                style="margin-left: 25px"
+              />
+            </td>
+            <td style="font-size: 25px">Jasa Pengiriman</td>
+          </tr>
+        </table>
+      </div>
+      <div>
+        <table>
+          <tr>
+            <td>
+              <img
+                src="https://static.vecteezy.com/system/resources/previews/000/512/480/original/discount-glyph-black-icon-vector.jpg"
+                alt=""
+                width="100px"
+                height="100px"
+                style="margin-left: 25px"
+              />
+            </td>
+            <td style="font-size: 25px">Keuntungan Belanja</td>
+          </tr>
+        </table>
+      </div>
+    </footer>
+  </body>
+</html>
