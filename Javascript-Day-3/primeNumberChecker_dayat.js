@@ -51,25 +51,3 @@ console.log(isPrime(10.1));
 // console.log(isPrime(2));
 // console.log(isPrime('a'))
 // console.log(isPrime(5))
-
-function finduniqueSentence(sentence) {
-    let isDupplicate = false
-    for (let i = 0; i < sentence.length; i++) {
-        let countingLetter = 0
-        for (let j = 0; j < sentence.length; j++) {
-            if (sentence[i] === sentence[j]) {
-                countingLetter++
-            }
-            else if (countingLetter > 1) {
-                isDupplicate = true
-                break;
-            }
-        }
-    }
-    if(isDupplicate){
-        return false
-    }
-    return true
-}
-
-console.log(finduniqueSentence('abcdefg'))
