@@ -1,0 +1,120 @@
+body {
+  margin: 0px;
+}
+
+.titlePage {
+  margin: 0px;
+}
+
+.ml-10 {
+  margin-left: 60px;
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+
+.pb-10 {
+  padding-bottom: 10px;
+}
+
+.pr-10 {
+  padding-right: 10px;
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
+
+.titlePage h1 {
+  color: white;
+  font-weight: bold;
+  background-color: black;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.titlePage section {
+  width: 100%;
+  background-color: white;
+}
+
+.firstRowContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0px;
+  justify-content: center;
+}
+
+.firstRowContainer div {
+  width: 20%;
+  border: 1px solid black;
+  /* padding: 10px;  */
+  text-align: center;
+  /* margin-left: 60px */
+}
+
+.firstRowContainer h2 {
+  margin-bottom: 10px;
+}
+
+.firstRowContainer p {
+  margin-top: 5px;
+}
+
+.firstRowContainer button {
+  color: white;
+  background-color: #318ce7;
+  border-radius: 12px;
+  width: 100px;
+  margin-top: 0px;
+  border: none;
+  font-size: 20px;
+}
+
+.secondRowContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+.secondRowContainer div {
+  width: 20%;
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  margin-left: 60px;
+}
+
+.secondRowContainer h2 {
+  margin-bottom: 10px;
+}
+
+.secondRowContainer p {
+  margin-top: 5px;
+}
+
+.secondRowContainer button {
+  color: white;
+  background-color: #318ce7;
+  border-radius: 12px;
+  width: 100px;
+  margin-top: 0px;
+  border: none;
+  font-size: 20px;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+}
+
+footer div {
+  width: 25%;
+  margin-top: 20px;
+}
