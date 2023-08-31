@@ -60,7 +60,7 @@ function groupingDurationRandomSong(listMusics) {
         song.duration[1]= +song.duration[1]
         song.duration= song.duration[0]+song.duration[1]
         totalDuration += song.duration
-        if (totalDuration < 3600) {
+        if (totalDuration < 600) {
             song.duration=tempDurationSong
             groupedMusics.push(song)
         }

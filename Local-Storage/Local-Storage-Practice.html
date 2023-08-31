@@ -1,0 +1,81 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Storage Practice</title>
+    <style>
+      th,
+      td,
+      table {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body onload="readAll()">
+    <h1 id="homePage" style="text-align: center; margin-top: 40px">My Book Store</h1>
+    <a style="margin-left: 690px; font-size: 20px" id="trigger-Hide-Table" onclick="hideShowForm(event)" href="">Add book here</a>
+    <table id="data-Book" style="margin-left: auto; margin-right: auto; margin-top: 30px">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Total Count</th>
+          <th>Author</th>
+          <th>Description</th>
+          <th>Edit Item</th>
+          <th>Delete Item</th>
+        </tr>
+      </thead>
+      <tbody id="fetching-Book" style="text-align: center"></tbody>
+    </table>
+
+    <form id="book-Form" style="display: none" onsubmit="addBook(event)">
+      <h1 style="text-align: center; margin-top: 20px;">Form to add Book</h1>
+      <div style="display: flex; flex-wrap: wrap; margin-top: 50px">
+        <div style="width: 50%; text-align: end">
+            <label for="name" style="font-size: 20px">name:</label>
+            <input type="text" placeholder="name" id="name" style="width: 50%; height: 40px" />
+        </div>
+        <div style="width: 50%; text-align: start">
+            <label for="lname" style="margin-left: 50px; font-size: 20px">Total Count:</label>
+            <input type="number" placeholder="totalCount" id="totalCount" style="width: 50%; height: 40px"  />
+        </div>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; margin-top: 50px">
+        <div style="width: 50%; text-align: end">
+            <label for="name" style="font-size: 20px">Author:</label>
+            <input type="text" placeholder="author" id="author" style="width: 50%; height: 40px" />
+        </div>
+        <div style="width: 50%; text-align: start">
+            <label for="lname" style="margin-left: 50px; font-size: 20px">Description:</label>
+            <input type="text" placeholder="description" id="description" style="width: 50%; height: 40px"  />
+        </div>
+    </div>
+      <button style="margin-top: 50px; margin-left: 740px; font-size: 20px;" type="submit">Submit</button>
+    </form>
+    <form id="book-Form-Edit" style="display: none" onsubmit="editBook(id,event)">
+        <h1 style="text-align: center; margin-top: 20px;">Form to Edit Book</h1>
+        <div style="display: flex; flex-wrap: wrap; margin-top: 50px">
+          <div style="width: 50%; text-align: end">
+              <label for="name" style="font-size: 20px">name:</label>
+              <input type="text" placeholder="name" id="name1" style="width: 50%; height: 40px" />
+          </div>
+          <div style="width: 50%; text-align: start">
+              <label for="lname" style="margin-left: 50px; font-size: 20px">Total Count:</label>
+              <input type="number" placeholder="totalCount" id="totalCount1" style="width: 50%; height: 40px"  />
+          </div>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; margin-top: 50px">
+          <div style="width: 50%; text-align: end">
+              <label for="name" style="font-size: 20px">Author:</label>
+              <input type="text" placeholder="author" id="author1" style="width: 50%; height: 40px" />
+          </div>
+          <div style="width: 50%; text-align: start">
+              <label for="lname" style="margin-left: 50px; font-size: 20px">Description:</label>
+              <input type="text" placeholder="description" id="description1" style="width: 50%; height: 40px"  />
+          </div>
+      </div>
+        <button style="margin-top: 50px; margin-left: 740px; font-size: 20px;" type="submit">Submit</button>
+      </form>
+    <script src="./index.js"></script>
+  </body>
+</html>
