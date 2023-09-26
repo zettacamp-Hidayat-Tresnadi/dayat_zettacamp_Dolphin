@@ -86,7 +86,7 @@ class PlayListController {
                 for (const songId of songs) {
                     await Playlist.updateOne(
                       { _id: playlistId },
-                      { $addToSet: { songs: songs } }
+                      { $addToSet: { songs: songId } }
                     )
                   }
                 await Song.updateMany(
