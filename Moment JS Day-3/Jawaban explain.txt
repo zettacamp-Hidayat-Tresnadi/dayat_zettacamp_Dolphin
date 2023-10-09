@@ -1,0 +1,7 @@
+IsSameOrAfter : Check if a moment is after or the same as another moment.
+IsSameOrBefore : Check if a moment is before or the same as another moment. 
+Between : Check if a moment is between two other moments, optionally looking at unit scale (minutes, hours, days, etc). The match is exclusive. The first two arguments will be parsed as moments, if not already so.
+
+format :  function in Moment.js is used to format a moment (a specific date and time) into a string according to a specified format pattern. It allows you to control how the date and time should be displayed, including the order of elements like day, month, year, hour, minute, and second, as well as the use of different separators and text literals. For example, you can use it to display a date as "DD-MM-YYYY" or "MMMM D, YYYY" or a time as "HH:mm:ss a." It takes a format string as an argument and returns a string representing the moment in the specified format.
+
+diff : function in Moment.js is used to calculate the difference between two moments in time. It returns the difference in a specified unit of measurement, such as days, months, hours, minutes, seconds, etc. You provide two moments as arguments, and the function calculates how many units of the specified measurement exist between them. For example, you can use diff to find out how many days are between two dates or how many hours are between two times. It's a useful function for performing date and time arithmetic or calculating durations.
